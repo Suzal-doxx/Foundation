@@ -118,3 +118,7 @@ INSERT INTO Membership (StudentID, ClubID, JoinDate) VALUES
 (6, 202, '2024-01-27'),
 (3, 401, '2024-01-28'),
 (7, 401, '2024-01-30');
+
+INSERT INTO Student (StudentID, StudentName, Email)
+    -> VALUES (101, 'Sujal Shrestha', 'sujal@example.com');
+INSERT INTO Club (ClubID, ClubName, ClubRoom, ClubMentor) VALUES (501, 'IT Club', 'Room 501', 'Mr. Sharma');
