@@ -122,3 +122,12 @@ INSERT INTO Membership (StudentID, ClubID, JoinDate) VALUES
 INSERT INTO Student (StudentID, StudentName, Email)
     -> VALUES (101, 'Sujal Shrestha', 'sujal@example.com');
 INSERT INTO Club (ClubID, ClubName, ClubRoom, ClubMentor) VALUES (501, 'IT Club', 'Room 501', 'Mr. Sharma');
+
+
+mysql> SELECT
+    ->     s.StudentName,
+    ->     c.ClubName,
+    ->     m.JoinDate
+    -> FROM Membership m
+    -> JOIN Student s ON m.StudentID = s.StudentID
+    -> JOIN Club c ON m.ClubID = c.ClubID;
